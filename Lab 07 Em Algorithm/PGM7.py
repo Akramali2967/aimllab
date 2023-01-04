@@ -1,12 +1,12 @@
 import matplotlib.pyplot as plt
-from sklearn import datasets
+from sklearn.datasets import load_iris
 from sklearn.cluster import KMeans
 from sklearn.mixture import GaussianMixture 
 import sklearn.metrics as sm
 import pandas as pd
 import numpy as np
 
-iris = datasets.load_iris()
+iris = load_iris()
 print("\n IRIS DATA :",iris.data);
 print("\n IRIS FEATURES :\n",iris.feature_names) 
 print("\n IRIS TARGET  :\n",iris.target) 
